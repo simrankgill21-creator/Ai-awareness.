@@ -1,76 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Awareness</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap)" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header class="navbar">
-    <div class="logo">
-      <div class="logo-icon">◉</div>
+  <!-- LEFT NAVIGATION -->
+  <aside class="sidebar">
+
+    <a href="#home" class="logo">
+      <div class="logo-symbol">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 2a3 3 0 0 0-2.8 4A3 3 0 0 0 4.5 9a3 3 0 0 0 .3 5A3 3 0 0 0 7 18.8V19a2 2 0 0 0 2 2"/>
+          <path d="M15 2a3 3 0 0 1 2.8 4A3 3 0 0 1 19.5 9a3 3 0 0 1-.3 5A3 3 0 0 1 17 18.8V19a2 2 0 0 1-2 2"/>
+          <path d="M12 2v19"/>
+        </svg>
+      </div>
+
       <div class="logo-text">
         <span>AI</span>
-        <span>AWARENESS</span>
+        <small>AWARENESS</small>
       </div>
-    </div>
+    </a>
 
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About AI</a>
-      <a href="#">Community</a>
-      <a href="#">Safety</a>
-      <a href="#">Quiz</a>
-      <a href="#">Resources</a>
+
+    <nav class="side-nav">
+
+      <a href="#home" class="active">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11.5 12 4l9 7.5"/>
+            <path d="M5 10v10h14V10"/>
+          </svg>
+        </span>
+        Home
+      </a>
+
+      <a href="#about">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="6" width="12" height="12" rx="2"/>
+            <path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/>
+          </svg>
+        </span>
+        About AI
+      </a>
+
+      <a href="#community">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="8" r="3"/>
+            <circle cx="17" cy="9.5" r="2.4"/>
+            <path d="M4 19c0-3 2.4-5 5-5s5 2 5 5"/>
+            <path d="M14.5 19c.2-2.1 1.7-3.6 3.5-4"/>
+          </svg>
+        </span>
+        Community
+      </a>
+
+      <a href="#benefits-risks">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v18M5 21h14"/>
+            <path d="M12 3 5 7"/>
+            <path d="M12 3l7 4"/>
+            <path d="M5 7h5l-2.5 6a2.5 2.5 0 1 1-5 0Z"/>
+            <path d="M14 7h5l-2.5 6a2.5 2.5 0 1 1-5 0Z"/>
+          </svg>
+        </span>
+        Benefits & Risks
+      </a>
+
+      <a href="#quiz">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M9.3 9.3a2.7 2.7 0 1 1 3.9 2.4c-.8.5-1.2 1-1.2 2"/>
+            <line x1="12" y1="16.6" x2="12" y2="16.7"/>
+          </svg>
+        </span>
+        Quiz
+      </a>
+
+      <a href="#contact">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+        </span>
+        Contact
+      </a>
+
     </nav>
 
-    <div class="nav-actions">
-      <button class="search-btn">⌕</button>
-      <button class="menu-btn">☰</button>
-    </div>
-  </header>
+  </aside>
 
-  <main>
-    <section class="hero">
+
+  <!-- MAIN WEBSITE -->
+  <main class="website">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
       <div class="hero-text">
+
         <h1>
-          AI IS ALL<br />
-          AROUND US.
+          AI IS ALL<br>
+          <span>AROUND US</span>
         </h1>
 
-        <div class="underline"></div>
+        <div class="hero-line"></div>
 
         <p>
-          Learn, explore and stay informed about Artificial Intelligence
-          and how it impacts your everyday life.
+          Artificial Intelligence is shaping our world today and tomorrow.
+          Explore, learn, and stay informed.
         </p>
 
-        <button class="primary-btn">GET STARTED →</button>
+        <a href="#quiz" class="hero-button">
+          TAKE QUIZ
+        </a>
+
       </div>
+
 
       <div class="hero-image">
-        <div class="floating-icon icon-one">💬</div>
-        <div class="floating-icon icon-two">📱</div>
-        <div class="floating-icon icon-three">📡</div>
-        <div class="floating-icon icon-four">🚗</div>
-        <div class="floating-icon icon-five">❤</div>
+        <img src="images/hero-ai.png" alt="Artificial intelligence digital illustration">
+      </div>
 
-        <div class="robot">
-          <div class="antenna"></div>
+    </section>
 
-          <div class="robot-head">
-            <div class="robot-face">
-              <span class="eye"></span>
-              <span class="eye"></span>
-            </div>
+
+
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+
+      <p class="small-label">UNDERSTAND THE TECHNOLOGY</p>
+
+      <h2>What is AI?</h2>
+
+      <p>
+        Artificial Intelligence allows computers to analyse information,
+        recognise patterns and perform tasks that normally require human
+        intelligence.
+      </p>
+
+    </section>
+
+
+
+    <!-- COMMUNITY -->
+    <section class="section community-section" id="community">
+
+      <div class="section-title">
+        <span></span>
+        <h2>EXPLORE AI IN OUR COMMUNITY</h2>
+        <span></span>
+      </div>
+
+
+      <div class="community-grid">
+
+
+        <!-- EDUCATION -->
+        <article class="topic-card">
+
+          <div class="topic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 2 8l10 5 10-5Z"/>
+              <path d="M6 10.5V15c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/>
+              <path d="M22 8v6"/>
+            </svg>
           </div>
 
-          <div class="robot-body"></div>
-        </div>
+          <h3>EDUCATION</h3>
+
+          <p>
+            AI can spread incorrect information, encourage over-reliance,
+            and reduce independent thinking.
+          </p>
+
+          <a href="#" class="learn-button">
+            LEARN MORE
+          </a>
+
+        </article>
+
+
+        <!-- WORKPLACES -->
+        <article class="topic-card">
+
+          <div class="topic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="8" width="18" height="11" rx="2"/>
+              <path d="M8 8V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+              <path d="M3 13h18"/>
+            </svg>
+          </div>
+
+          <h3>WORKPLACES</h3>
+
+          <p>
+            AI is changing jobs and automating tasks, transforming the way
+            people work.
+          </p>
+
+          <a href="#" class="learn-button">
+            LEARN MORE
+          </a>
+
+        </article>
+
+
+        <!-- ENVIRONMENT -->
+        <article class="topic-card">
+
+          <div class="topic-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2s7 8.5 7 13a7 7 0 1 1-14 0c0-4.5 7-13 7-13Z"/>
+            </svg>
+          </div>
+
+          <h3>ENVIRONMENT</h3>
+
+          <p>
+            AI consumes large amounts of water and energy, increasing its
+            environmental impact.
+          </p>
+
+          <a href="#" class="learn-button">
+            LEARN MORE
+          </a>
+
+        </article>
+
       </div>
+
     </section>
+
+
+
+    <!-- BENEFITS AND RISKS -->
+    <section class="section" id="benefits-risks">
+
+      <div class="section-title">
+        <span></span>
+        <h2>BENEFITS AND RISKS OF AI</h2>
+        <span></span>
+      </div>
+
+
+      <div class="comparison">
+
+
+        <!-- BENEFITS -->
+        <div class="comparison-card benefits">
+
+          <div class="comparison-heading">
+
+            <div class="circle-icon blue-circle">
+              ↗
+            </div>
+
+            <h3>BENEFITS</h3>
+
+          </div>
+
+          <ul>
+            <li>Improves efficiency and productivity</li>
+            <li>Enhances decision-making</li>
+            <li>Supports innovation and discovery</li>
+          </ul>
+
+          <a href="#" class="comparison-button blue-button">
+            DISCOVER MORE
+          </a>
+
+        </div>
+
+
+        <!-- RISKS -->
+        <div class="comparison-card risks">
+
+          <div class="comparison-heading">
+
+            <div class="circle-icon red-circle">
+              !
+            </div>
+
+            <h3>RISKS</h3>
+
+          </div>
+
+          <ul>
+            <li>Job displacement and inequality</li>
+            <li>Privacy and security concerns</li>
+            <li>Bias and ethical issues</li>
+          </ul>
+
+          <a href="#" class="comparison-button red-button">
+            STAY INFORMED
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- QUIZ -->
+    <section class="quiz-section" id="quiz">
+
+      <div class="section-title dark-title">
+        <span></span>
+        <h2>HOW AI AWARE ARE YOU?</h2>
+        <span></span>
+      </div>
+
+
+      <div class="quiz-content">
+
+        <div class="quiz-image">
+          <img src="images/quiz-ai.png" alt="Digital AI brain illustration">
+        </div>
+
+
+        <div class="quiz-text">
+
+          <h3>Take Quiz</h3>
+
+          <div class="mini-line"></div>
+
+          <p>
+            Test your knowledge with our quick quiz!
+          </p>
+
+          <a href="#" class="quiz-button">
+            TAKE QUIZ
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer id="contact">
+
+      <div class="footer-grid">
+
+
+        <div class="footer-column">
+
+          <h4>HELPFUL LINKS</h4>
+
+          <a href="#">AI Basics</a>
+          <a href="#">How AI Works</a>
+          <a href="#">AI in Everyday Life</a>
+          <a href="#">AI Glossary</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>RESOURCES</h4>
+
+          <a href="#">Articles</a>
+          <a href="#">Guides</a>
+          <a href="#">Videos</a>
+          <a href="#">Research</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>CONTACT US</h4>
+
+          <a href="#">Email Us</a>
+          <a href="#">Get in Touch</a>
+          <a href="#">Send Feedback</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+          <h4>FOLLOW US</h4>
+
+          <div class="socials">
+            <a href="#">f</a>
+            <a href="#">◎</a>
+            <a href="#">X</a>
+            <a href="#">in</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <p>© 2026 AI Awareness</p>
+
+        <div>
+          <a href="#">Privacy Policy</a>
+          <span>|</span>
+          <a href="#">Terms of Use</a>
+        </div>
+
+      </div>
+
+    </footer>
+
   </main>
 
 </body>
